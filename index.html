@@ -8,6 +8,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       -webkit-font-smoothing: antialiased;
       color: #333;
+      background: #fdfdfd;
     }
 
     .container {
@@ -23,25 +24,52 @@
     }
 
     li {
-      margin: 1rem 0;
+      margin: 2rem 0;
+      line-height: 125%;
+    }
+
+    .quote-source {
+      font-size: 0.5rem;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .header {
+      text-align: center;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background: black;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        color: #eee;
+        background: #000;
+      }
+
+      hr {
+        background: #eee;
+      }
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>Wisdom</h1>
+    <div class="header">
+      <h1>Wisdom</h1>
+    </div>
+    <hr>
     <ul>
+      <li>“Knowledge speaks, but wisdom listens.”</li>
       <li>“Never be an expert at coming up with excuses.”</li>
       <li>“Motivation is what gets you started. Habit is what keeps you going.”</li>
-      <li>“Once you decide on your occupation, you must immerse yourself in your work. You have to fall in love with your work. Never complain about your job. You must dedicate your life to mastering your skill. That’s the secret of success...”<br>—Jiro Ono</li>
-      <li>“If you are going to achieve excellence in big things, you develop the habit in little matters. Excellence is not an exception, it is a prevailing attitude.”<br>—Colin Powell</li>
-      <li>“A sense of urgency, even if manufactured, is enough to easily double or triple your productivity.”</li>
-      <li>“The successful warrior is the average man, with laser focus.”<br>—Bruce Lee</li>
-      <li>“You don’t have to ask permission to take responsibility.”<br>—Ed Catmull</li>
-      <li>“Knowledge speaks, but wisdom listens.”</li>
-      <li>“Happiness is a state of mind, not a set of circumstances.”<br>—Richard Carlson</li>
-      <li>“To be prepared is half the victory.”<br>—Miguel de Cervantes</li>
+      <li>“If you are going to achieve excellence in big things, you develop the habit in little matters. Excellence is not an exception, it is a prevailing attitude.”<br><span class="quote-source">—Colin Powell</span></li>
+      <li>“You don’t have to ask permission to take responsibility.”<br><span class="quote-source">—Ed Catmull</span></li>
+      <li>“Happiness is a state of mind, not a set of circumstances.”<br><span class="quote-source">—Richard Carlson<span></li>
     </ul>
   </div>
 </body>
